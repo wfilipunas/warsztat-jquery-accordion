@@ -1,0 +1,49 @@
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-item:first-child {
+    border-top: 1px solid black;
+}
+
+.accordion-item {
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 2.5em;
+    cursor: pointer;
+}
+
+.accordion-title::before {
+    content: '+';
+    float: left;
+    position: relative;
+    left: 20px;
+}
+
+.open .accordion-title::before {
+    content: '-';
+}
+
+.accordion-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.accordion-content {
+    margin: 20px;
+}
+
+.d-none {
+    display: none;
+}
+
+
